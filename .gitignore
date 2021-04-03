@@ -10,6 +10,5 @@ bin
 *.arith
 !JsnarkCirctuitBuilder/auction_10.arith
 *.in
-depends/
 build/
 tinyram_examples/
