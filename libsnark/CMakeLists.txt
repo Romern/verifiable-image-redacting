@@ -656,7 +656,7 @@ add_executable(
 target_link_libraries(
   Verifiable_image_redacting_test
   ${OpenCV_LIBS}
-  /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so
+  /usr/lib/libssl.so.48 /usr/lib/libcrypto.so.46
   OpenMP::OpenMP_CXX
   #/usr/local/lib/libbls.a
 
