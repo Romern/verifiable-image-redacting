@@ -2,6 +2,8 @@
 #define SNARK_FOR_FILTERING_HPP_
 
 #include <libff/algebra/curves/public_params.hpp>
+#include <libff/algebra/curves/alt_bn128/alt_bn128_init.hpp>
+
 
 #include <libsnark/common/data_structures/accumulation_vector.hpp>
 #include <libsnark/knowledge_commitment/knowledge_commitment.hpp>

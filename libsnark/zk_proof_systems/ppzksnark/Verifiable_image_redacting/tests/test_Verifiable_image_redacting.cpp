@@ -29,6 +29,7 @@
 
 using namespace libsnark;
 using namespace cv;
+using std::vector;
 
 bool mouse_is_pressing = false;
 Mat original_array;
