@@ -37,7 +37,7 @@ Mat u1_array;
 Mat u2_array;
 int stride=1;
 int end_x_ = -1, end_y_ = -1;
-int ratio = 1;
+int ratio_ayy = 1;
 
 struct Image_ROI{
     vector<int> start_x;
@@ -157,10 +157,10 @@ void test_snark_for_filtering()
     // cv::waitKey(0);
 	// destroyAllWindows();
     /*TEST*/
-        pt.start_x.push_back(100*ratio);
-        pt.start_y.push_back(100*ratio);
-        pt.end_x.push_back(300*ratio);
-        pt.end_y.push_back(300*ratio);
+        pt.start_x.push_back(100*ratio_ayy);
+        pt.start_y.push_back(100*ratio_ayy);
+        pt.end_x.push_back(300*ratio_ayy);
+        pt.end_y.push_back(300*ratio_ayy);
         pt.start_x[0] = pt.start_x[0] - pt.start_x[0]%stride;
         pt.start_y[0] = pt.start_y[0] - pt.start_y[0]%stride;
         pt.end_x[0] = ((pt.end_x[0]+stride-1)/stride)*stride;
@@ -258,8 +258,8 @@ int main()
     //     stride *= 2;
     // }
      stride = 4;
-     ratio = 2;
-    original_array =  cv::imread("/home/itsp/snark_for_filtering/libsnark/zk_proof_systems/ppzksnark/snark_for_filtering/tests/hd.jpg",IMREAD_COLOR);
+     ratio_ayy = 2;
+    original_array =  cv::imread("hd.jpg",IMREAD_COLOR);
      for(int i=0;i<3;i++){
         printf("hd stride: %d",stride);
         test_snark_for_filtering<default_r1cs_gg_ppzksnark_pp>();

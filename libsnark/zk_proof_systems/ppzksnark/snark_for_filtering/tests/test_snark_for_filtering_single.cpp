@@ -30,7 +30,7 @@ using namespace libsnark;
 using namespace cv;
 
 bool mouse_is_pressing = false;
-Mat original_array =  cv::imread("/home/itsp/snark_for_filtering/libsnark/zk_proof_systems/ppzksnark/snark_for_filtering/tests/uhd.jpg",IMREAD_COLOR);
+Mat original_array =  cv::imread("uhd.jpg",IMREAD_COLOR);
 Mat u1_array;
 Mat u2_array = original_array.clone();
 int stride=1;
