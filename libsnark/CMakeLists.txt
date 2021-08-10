@@ -623,7 +623,7 @@ add_executable(
 target_link_libraries(
   zk_proof_systems_r1cs_gg_ppzksnark_test
   ${OpenCV_LIBS}
-  /usr/lib/libssl.so /usr/lib/libcrypto.so
+  ${OpenSSL_LIBS}
 
   snark
 )
@@ -639,7 +639,7 @@ add_executable(
 target_link_libraries(
   zk_proof_systems_snark_for_filtering_test
   ${OpenCV_LIBS}
-  /usr/lib/libssl.so /usr/lib/libcrypto.so
+  ${OpenSSL_LIBS}
   OpenMP::OpenMP_CXX
   ${DEPENDS_DIR}/bls-signatures/target/debug/libbls_signatures_ffi.so
   snark
@@ -656,7 +656,7 @@ add_executable(
 target_link_libraries(
   Verifiable_image_redacting_test
   ${OpenCV_LIBS}
-  /usr/lib/libssl.so /usr/lib/libcrypto.so
+  ${OpenSSL_LIBS}
   OpenMP::OpenMP_CXX
   #/usr/local/lib/libbls.a
 
