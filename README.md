@@ -25,16 +25,6 @@ The repository additionally requires the following:
 
 ### Building
 
-Compile bls-signatures:
-
-```
-cd depends/bls-signatures
-sed -i "s/staticlib/dylib/g" bls-signatures-ffi/Cargo.toml
-cargo build
-cd bls-signatures-ffi
-cargo build
-```
-
 Create the Makefile:
 
     $ mkdir build && cd build && cmake ..

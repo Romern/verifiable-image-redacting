@@ -16,6 +16,3 @@
 [submodule "depends/libfqfft"]
 	path = depends/libfqfft
 	url = https://github.com/scipr-lab/libfqfft.git
-[submodule "depends/bls-signatures"]
-	path = depends/bls-signatures
-	url = https://github.com/filecoin-project/bls-signatures.git

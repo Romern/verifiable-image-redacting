@@ -641,7 +641,7 @@ target_link_libraries(
   ${OpenCV_LIBS}
   ${OpenSSL_LIBS}
   OpenMP::OpenMP_CXX
-  ${DEPENDS_DIR}/bls-signatures/target/debug/libbls_signatures_ffi.so
+#  ${DEPENDS_DIR}/bls-signatures/target/debug/libbls_signatures_ffi.so
   snark
 )
 
